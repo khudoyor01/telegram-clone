@@ -1,0 +1,527 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.container .section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+
+.container .section .settings {
+  text-align: center;
+  width: 5%;
+  height: 100vh;
+  background-color: #293a4c;
+  position: relative;
+  z-index: 1;
+}
+
+.container .section .settings .burger {
+  margin: 1.5rem 1.8rem;
+}
+
+.container .section .settings .burger .burger__btn {
+  display: block;
+  background-color: #8393a3;
+  width: 20px;
+  height: 2px;
+  margin: 4px 0;
+}
+
+.container .section .settings .comment {
+  margin: 1rem 0;
+}
+
+.container .section .settings .comment #icon {
+  font-size: 26px;
+  color: #8393a3;
+}
+
+.container .section .settings .comment .title {
+  color: #8393a3;
+  font-weight: 500;
+  font-size: 11px;
+  margin-top: 0.2rem;
+}
+
+.container .section .setting__modal {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.container .section .setting__modal .close #close__btn {
+  color: #fff;
+  padding: 1rem;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.container .section .setting__modal .user__about {
+  width: 20%;
+  height: 100vh;
+}
+
+.container .section .setting__modal .user__about .block {
+  height: 22vh;
+  background: #7ea47f;
+  background: radial-gradient(circle, #7ea47f 41%, #d3d198 87%);
+}
+
+.container .section .setting__modal .user__about .block .block__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8rem 1rem;
+}
+
+.container .section .setting__modal .user__about .block .block__img .user__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container .section .setting__modal .user__about .block .block__img .saved__notes {
+  width: 35px;
+  height: 35px;
+  background-color: #6c9262;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.container .section .setting__modal .user__about .block .block__img .saved__notes #saved__img {
+  color: #fff;
+  font-size: 17px;
+}
+
+.container .section .setting__modal .user__about .block .user__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 1.4rem;
+}
+
+.container .section .setting__modal .user__about .block .user__numbers .user__contact {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.container .section .setting__modal .user__about .block .user__numbers #arrow {
+  font-weight: 200;
+  color: #fff;
+  font-size: 32px;
+}
+
+.container .section .setting__modal .user__about .account {
+  min-height: 78vh;
+  background: #fff;
+}
+
+.container .section .setting__modal .user__about .account .account__name {
+  text-align: center;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 0.8rem;
+}
+
+.container .section .setting__modal .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 40px;
+}
+
+.container .section .contact {
+  width: 35%;
+  border-right: 1px solid #d7d8da;
+}
+
+.container .section .contact .contact__menu {
+  padding-top: 0.29rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0;
+}
+
+.container .section .contact .contact__menu .input {
+  outline: none;
+  border: none;
+  border: 1px solid #e4e4e4;
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 0.2rem;
+  width: 80%;
+  height: 25px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+}
+
+.container .section .contact .contact__menu .input:focus {
+  border-color: #00aeff;
+  background-color: #fff;
+}
+
+.container .section .contact .contact__menu .g {
+  list-style: none;
+  font-size: 19px;
+  font-weight: 400;
+  height: 95vh;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .section .contact .contact__menu .g .get {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .section .contact .contact__menu .g .get .img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.container .section .contact .contact__menu .g .get .name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .section .setting__modal.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.container .section .messages {
+  width: 60%;
+  background: #7ea47f;
+  background: radial-gradient(circle, #7ea47f 41%, #d3d198 87%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .section .messages .meat {
+  width: 100%;
+}
+
+.container .section .messages .meat .auto__bio {
+  margin-left: .5rem;
+}
+
+.container .section .messages .meat .auto__bio .bio__name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.container .section .messages .meat .auto__bio .bio__time {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.container .section .messages .meat .message__text .user__information {
+  height: 8vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.container .section .messages .meat .message__text .user__information .user__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.container .section .messages .meat .message__text .user__information .user__icons .user__info {
+  color: #8393a3;
+}
+
+.container .section .messages .meat .message__text .user__information .user__icons .user__info.active {
+  color: #5189f3;
+}
+
+.container .section .messages .meat .message__text .user__information .user__icons .channel {
+  color: #8393a3;
+}
+
+.container .section .messages .meat .message__text .user__information .user__icons .search {
+  color: #8393a3;
+}
+
+.container .section .messages .meat .text__area {
+  height: 85vh;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+}
+
+.container .section .messages .meat .text__area li {
+  max-width: 35%;
+  padding: 15px;
+  font-size: 20px;
+  display: block;
+}
+
+.container .section .messages .meat .text__area .to__me {
+  background-color: #55b118;
+  border-radius: 5px 5px 5px 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.container .section .messages .meat .text__area .from__me {
+  background-color: #2da0ce;
+  border-radius: 5px 5px 0 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.container .section .messages .meat .writing__message {
+  background-color: #fff;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .section .messages .meat .writing__message .board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+}
+
+.container .section .messages .meat .writing__message .board .clip {
+  padding: 0.5rem;
+  font-size: 25px;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+
+.container .section .messages .meat .writing__message .board .text__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container .section .messages .meat .writing__message .icons .emoji,
+.container .section .messages .meat .writing__message .icons .send {
+  padding: 0.5rem;
+  font-size: 19px;
+}
+
+.container .section .messages .meat .writing__message .icons .emoji {
+  color: #6b6b6b;
+}
+
+.container .section .messages .meat .writing__message .icons .send {
+  color: #0088cc;
+}
+
+.container .section .messages .user__infomodal {
+  display: none;
+  width: 40%;
+  background-color: #fff;
+}
+
+.container .section .messages .user__infomodal .users__about .close__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.container .section .messages .user__infomodal .users__about .close__btn .user__info {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.container .section .messages .user__infomodal .users__about .close__btn #close__bttn {
+  font-size: 22px;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+.container .section .messages .user__infomodal .users__about .user__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 8px solid #f1f1f1;
+}
+
+.container .section .messages .user__infomodal .users__about .user__about img {
+  width: 55px;
+  border-radius: 50%;
+  height: 55px;
+}
+
+.container .section .messages .user__infomodal .users__about .user__about .names .name {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.container .section .messages .user__infomodal .users__about .user__about .names .enter {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6d6d6d;
+}
+
+.container .section .messages .user__infomodal .users__about .notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .notice__img {
+  font-size: 24px;
+  font-weight: 400;
+  color: #8a8a8a;
+  margin-top: 0.5rem;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .users__contact .numbers {
+  line-height: 22px;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .users__contact .numbers .number {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .users__contact .numbers .type {
+  color: #919191;
+  font-style: 8px;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .users__contact .users__bio {
+  margin-top: 1rem;
+  line-height: 22px;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .users__contact .users__bio .bio__text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .users__contact .users__bio .type {
+  font-size: 13px;
+  font-weight: 600;
+  color: #919191;
+}
+
+.container .section .messages .user__infomodal .users__about .notice .border {
+  width: 40px;
+  border: 1px solid #000;
+}
+
+.container .section .messages .user__infomodal.active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

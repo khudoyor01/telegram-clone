@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section">
+        <div class="settings">
+          <div class="setting__item">
+            <div class="burger">
+              <span class="burger__btn"></span>
+              <span class="burger__btn"></span>
+              <span class="burger__btn"></span>
+            </div>
+            <div class="comment">
+              <i id="icon" class="far fa-comments"></i>
+              <h6 class="title">All chats</h6>
+            </div>
+            <div class="comment">
+              <i id="icon" class="far fa-user"></i>
+              <h6 class="title">friends</h6>
+            </div>
+            <div class="comment">
+              <i id="icon" class="far fa-comment"></i>
+              <h6 class="title">Unread</h6>
+            </div>
+            <div class="comment">
+              <i id="icon" class="fas fa-sliders-h"></i>
+              <h6 class="title">Edit</h6>
+            </div>
+          </div>
+        </div>
+        <div class="setting__modal">
+          <div class="user__about">
+            <div class="block">
+              <div class="block__img">
+                <img
+                  class="user__img"
+                  src="https://www.supercars.net/blog/wp-content/uploads/2016/04/2010_MercedesBenz_F800Style4.jpg"
+                  alt="Mercedes-benz"
+                />
+                <div class="saved__notes">
+                  <i id="saved__img" class="far fa-bookmark"></i>
+                </div>
+              </div>
+              <div class="user__numbers">
+                <ul class="user__contact">
+                  <li class="user__name"></li>
+                  <li class="user__phone"></li>
+                </ul>
+                <i id="arrow" class="fas fa-angle-up"></i>
+              </div>
+            </div>
+
+            <div class="account">
+              <ul class="account__name">
+                <li class="names"></li>
+              </ul>
+            </div>
+            <div class="set"></div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact__menu">
+            <input class="input" type="text" placeholder="Search" />
+            <ul class="g"></ul>
+            <ul class="users"></ul>
+            <div class="auto">
+              <div class="user__name"></div>
+              <div class="user__photo"></div>
+            </div>
+          </div>
+        </div>
+        <div class="messages">
+          <div class="meat">
+            <div class="message__text">
+              <div class="user__information">
+                <ul class="auto__bio">
+                  <li class="bio__name">Username</li>
+                  <li class="bio__time">Time</li>
+                </ul>
+                <div class="user__icons">
+                  <i class="search fas fa-search"></i>
+                  <i class="user__info fas fa-book-open"></i>
+                  
+                  <i class="channel fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+            </div>
+            <ul class="text__area"></ul>
+            <div class="writing__message">
+              <div class="board">
+                <i class="clip fas fa-paperclip"></i>
+                <input
+                  class="text__input"
+                  type="text"
+                  placeholder="Writing a message..."
+                />
+              </div>
+              <div class="icons">
+                <i class="emoji far fa-smile"></i>
+                <i class="send fas fa-paper-plane"></i>
+              </div>
+            </div>
+          </div>
+          <div class="user__infomodal">
+            <div class="users__about">
+              <div class="close__btn">
+                <h6 class="user__info">User info</h6>
+                <i id="close__bttn" class="fas fa-times"></i>
+              </div>
+              <div class="user__about">
+                <div class="about__img"></div>
+                <ul class="names">
+                  <li class="namess"></li>
+                  <li class="enter"></li>
+                </ul>
+              </div>
+              <div class="notice">
+                <i class="notice__img fal fa-exclamation-circle"></i>
+                <div class="users__contact">
+                  <div class="numbers">
+                    <div class="number">+998930986894</div>
+                    <div class="type">Mobile</div>
+                  </div>
+                  <div class="users__bio">
+                    <p class="bio__text"></p>
+                    <div class="type"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="add">
+                <i class="fal fa-image-polaroid"></i>
+                <h6 class="photos"></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mains">
+        <ul class="s"></ul>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
